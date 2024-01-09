@@ -8,12 +8,12 @@ Your OpenCanary Config file must contain this JSON key and value pair under the 
 
 ```json
 "Webhook": {
-                "class": "opencanary.logger.WebhookHandler",
-                "url": "your-discord-webhook-url"
-                "method": "POST",
-                "data": {
-                            "content": "%(message)s"
-                        },
-                "status_code": 200
-            }
+    "class": "opencanary.logger.WebhookHandler",
+    "url": "your-discord-webhook-url"
+    "method": "POST",
+    "data": {
+                "content": "%(message)s"
+            },
+    "status_code": 200
+}
 ```

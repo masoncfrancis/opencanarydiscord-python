@@ -61,4 +61,4 @@ def handler():
     return jsonify({"statusCode": response.status_code, "body": response.text})
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False)

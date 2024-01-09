@@ -18,7 +18,7 @@ def handler():
 
     # Get JSON data from the incoming HTTP request
     try:
-        input_data = request.get_json()
+        input_data = request.get_json(force=True)
         json_message = input_data.get("content", "")
     except Exception as e:
         return jsonify({"error": str(e)}), 400

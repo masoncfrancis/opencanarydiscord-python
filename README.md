@@ -1,8 +1,10 @@
 # OpenCanary Discord Formatter
 
-A server that accepts a message from OpenCanary, formats the data into a table, and sends it to a Discord webhook. 
+A server that accepts a message from OpenCanary, formats the data into a table, and sends it to a Discord webhook.
 
-## OpenCanary Config
+## Configuration
+
+### OpenCanary Config
 
 Your OpenCanary Config file must contain this JSON key-value pair under the `"handlers"` key:
 
@@ -17,3 +19,7 @@ Your OpenCanary Config file must contain this JSON key-value pair under the `"ha
     "status_code": 200
 }
 ```
+
+### Environment Variables
+
+You must set an environment variable `DISCORD_WEBHOOK_URL` as your Discord webhook url.

@@ -14,7 +14,7 @@ def handler():
     if not webhook_url:
         raise ValueError("Discord webhook URL not found in environment variables.")
     
-    print(request.get())
+    print(request)
 
     # Get JSON data from the incoming HTTP request
     try:

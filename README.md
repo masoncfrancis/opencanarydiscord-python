@@ -2,6 +2,8 @@
 
 A server that accepts a message from OpenCanary, formats the data into a table, and sends it to a Discord webhook.
 
+It is designed to be run in production using GUnicorn.
+
 ## Configuration
 
 ### OpenCanary Config

@@ -1,7 +1,6 @@
 from flask import Flask, request, jsonify
 import os
 import json
-import argparse
 import requests
 
 app = Flask(__name__)
@@ -13,7 +12,7 @@ def handler():
 
     if not webhook_url:
         raise ValueError("Discord webhook URL not found in environment variables.")
-    
+    print(request.values)
     # Get JSON data from the incoming HTTP request
     try:
         input_data = request.get_json(force=True)

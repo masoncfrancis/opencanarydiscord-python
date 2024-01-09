@@ -4,7 +4,7 @@ A server that accepts a message from OpenCanary, formats the data into a table, 
 
 ## OpenCanary Config
 
-Your OpenCanary Config file must contain this JSON key and value pair under the `"handlers"` key:
+Your OpenCanary Config file must contain this JSON key-value pair under the `"handlers"` key:
 
 ```json
 "Webhook": {

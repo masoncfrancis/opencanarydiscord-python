@@ -1,4 +1,4 @@
-# OpenCanary Discord Formatter
+# OpenCanary Discord Connector
 
 A server that accepts a message from OpenCanary, formats the data into a table, and sends it to a Discord webhook.
 

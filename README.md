@@ -1,6 +1,6 @@
 # OpenCanary Discord Connector
 
-A server that accepts a message from OpenCanary, formats the data into a table, and sends it to a Discord webhook.
+A simple Flask server that accepts a message from OpenCanary, formats the data into a table, and sends it to a Discord webhook.
 
 The [requirements.txt](requirements.txt) file is set up for it to be fun via gunicorn, but you can use whatever server you want. 
 

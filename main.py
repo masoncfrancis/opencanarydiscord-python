@@ -30,7 +30,7 @@ def handler():
     discord_request_body = {
         "embeds": [
             {
-                "title": "OpenCanary Alert",
+                "title": "OpenCanary: Hit from " + str(input_json.get("src_host", "")) + " on " + str(str(input_json.get("src_port", -1))),
                 "color": 16777215,  # Color in decimal format (white)
                 "fields": [
                     {"name": "Field", "value": "Value", "inline": True},

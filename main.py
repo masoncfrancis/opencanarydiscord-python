@@ -2,6 +2,7 @@ from flask import Flask, request, jsonify
 import os
 import json
 import requests
+import sys
 
 app = Flask(__name__)
 
@@ -61,5 +62,12 @@ def handler():
     return jsonify({"statusCode": response.status_code, "body": response.text})
 
 if __name__ == '__main__':
+
+    # if the environment variable is not set, print an error and quit
+    if "DISCORD_WEBHOOK_URL" not in os.environ:
+        print("Environment variable \"DISCORD_WEBHOOK_URL\" is not set. Please set before running")
+        sys.exit(1)
+
+    # run the app
     app.run(debug=True, host="0.0.0.0", port=int(os.environ.get("PORT", 8080)))
     

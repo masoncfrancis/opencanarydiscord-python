@@ -13,7 +13,7 @@ Your OpenCanary config file must contain this JSON key-value pair under the `"ha
 ```json
 "Webhook": {
     "class": "opencanary.logger.WebhookHandler",
-    "url": "your-discord-webhook-url"
+    "url": "url-to-this-connector"
     "method": "POST",
     "headers": {
                     "Content-Type": "application/json"

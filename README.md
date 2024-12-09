@@ -1,4 +1,6 @@
 # OpenCanary Discord Connector
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fmasoncfrancis%2Fopencanary-discord-connector.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fmasoncfrancis%2Fopencanary-discord-connector?ref=badge_shield)
+
 
 A simple Flask server that accepts a message from OpenCanary, formats the data into a table, and sends it to a Discord webhook.
 
@@ -28,3 +30,7 @@ Your OpenCanary config file must contain this JSON key-value pair under the `"ha
 ### Environment Variables
 
 You must set an environment variable `DISCORD_WEBHOOK_URL` as your Discord webhook url.
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fmasoncfrancis%2Fopencanary-discord-connector.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fmasoncfrancis%2Fopencanary-discord-connector?ref=badge_large)
